@@ -1,0 +1,88 @@
+{
+    "title": "基本设置",
+    "tab": [
+        {
+            "label": "常见问题汇总",
+            "value": [
+                {
+                    "type": "collapse",
+                    "label": "【支持库冲突说明】",
+                    "text": "1、有的易友加载支持库后，发现易语言关闭不了、关闭会崩溃、或其它的一些问题，这些可能是跟其它的支持库功能冲突了。<br>2、确定是否是支持库冲突造成的流程：按住Shift键，然后双击启动易语言，然后选择菜单[工具]→[支持库配置]→只选择[易IDE视觉库]，如果没问题，证明是支持库起冲突造成的，否则为[易IDE视觉库]自身的一些原因，请在反馈帖内描述你的问题，方便的话带上你的QQ。"
+                },
+                {
+                    "type": "collapse_end"
+                },
+                {
+                    "type": "collapse",
+                    "label": "【插件冲突排错方案】- 如果非上方支持库冲突导致问题，请查看本方案",
+                    "text": " 停用所有插件，在依次启用插件使用测试，如果确认了是某个插件出的问题， 请联系我们反馈该情况； "
+                },
+                {
+                    "type": "collapse_end"
+                },
+                {
+                    "type": "collapse",
+                    "label": "【win10 用户请看】",
+                    "text": "请确保易语言是否安装在C盘，如果是在C盘安装的易语言，请移动到其他目录，并用管理员方式启动易语言试试是否解决之前的问题！ "
+                },
+                {
+                    "type": "collapse_end"
+                },
+                {
+                    "type": "collapse",
+                    "label": "【调试崩溃】排错方案",
+                    "text": "1、停用所有插件或直接停用本支持库，再次调试运行看会不会，如果不会，则应该是某插件导致；<br>2、新建一个空白的程序调试运行看会不会，如果不会，请参考3；<br> 3、打开调试崩溃的源码，将最近改过的代码全部复制到记事本，在删除原先的代码，从记事本中复制，粘贴到易语言，再次测试；<br>4、还不行，就从备份目录里面找历史备份调试运行，挨个找没问题的源码；<br><br>Tip：请先一个一个排除后在说是助手问题，像这种某个程序源码调试崩溃，而新建一个新的空白源码不崩溃，一般都是该源码有问题，请自行检查；如果还没解决，请加群交流反馈；"
+                },
+                {
+                    "type": "collapse_end"
+                },
+                {
+                    "type": "collapse",
+                    "label": "【eFrame接口初始化失败】错误解决方案",
+                    "text": "1、请尝试在易语言里面只勾选易IDE视觉支持库：按住shift键启动易语言后，只勾选IDE视觉支持库，看是否还会出现该错误； <br>2、请不要把易语言安装在C盘，在win10中，有很多权限要求比较严格，请移动到其他盘符后是否还出现该情况; <br>3、以上方法都不能解决，请给易语言加上<a href=\"https://jingyan.baidu.com/article/72ee561aac861ee16038df58.html\" >数据保护</a>，重启后看是否出现该情况； <br>4、以上方法都测试了还不行，而且您确定不放弃继续使用，请加群联系我们！"
+                },
+                {
+                    "type": "collapse_end"
+                },
+                {
+                    "type": "quote",
+                    "text": "倡议： <br><br>建议您使用正版易语言，购买正版易语言加密狗，该支持库会和其他和界面相关的支持库或插件相冲突，请使用正版加密狗，及时体验正版易语言的相关功能，减少未知BUG的出现！  <a href=\"http://eyuyan.taobao.com\" >点此购买</a>"
+                }
+            ]
+        },
+        {
+            "label": "关于易语言IDE视觉支持库",
+            "value": [
+                {
+                    "type": "quote",
+                    "text": "易IDE视觉支持库，实现了能够将易语言界面进行重绘，已达到一定的美化效果，媲美主流的IDE工具，为易语言用户提供了更加良好的编程体验。"
+                },
+                {
+                    "type": "quote",
+                    "text": "易IDE视觉库②：<a href='https://jq.qq.com/?_wv=1027&k=fpjwK58k'>788539398</a>"
+                },
+                {
+                    "type": "quote",
+                    "text": "欢迎广大易友广泛的献言献策，为易添砖加瓦，让易更易！如果您有更好的功能建议，也请与我们联系，或在群内畅言！期待与您相会，易路相行！"
+                }
+            ]
+        },
+        {
+            "label": "LICENSE",
+            "value": [
+                {
+                    "type": "quote",
+                    "text": "该设置程序使用了 miniblink 提供的浏览器内核引擎。"
+                },
+                {
+                    "type": "collapse",
+                    "label": "LICENSE.txt",
+                    "text": " Apache License</br>                           Version 2.0, January 2004</br>                        http://www.apache.org/licenses/</br></br>   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION</br></br>   1. Definitions.</br></br>      \"License\" shall mean the terms and conditions for use, reproduction,</br>      and distribution as defined by Sections 1 through 9 of this document.</br></br>      \"Licensor\" shall mean the copyright owner or entity authorized by</br>      the copyright owner that is granting the License.</br></br>      \"Legal Entity\" shall mean the union of the acting entity and all</br>      other entities that control, are controlled by, or are under common</br>      control with that entity. For the purposes of this definition,</br>      \"control\" means (i) the power, direct or indirect, to cause the</br>      direction or management of such entity, whether by contract or</br>      otherwise, or (ii) ownership of fifty percent (50%) or more of the</br>      outstanding shares, or (iii) beneficial ownership of such entity.</br></br>      \"You\" (or \"Your\") shall mean an individual or Legal Entity</br>      exercising permissions granted by this License.</br></br>      \"Source\" form shall mean the preferred form for making modifications,</br>      including but not limited to software source code, documentation</br>      source, and configuration files.</br></br>      \"Object\" form shall mean any form resulting from mechanical</br>      transformation or translation of a Source form, including but</br>      not limited to compiled object code, generated documentation,</br>      and conversions to other media types.</br></br>      \"Work\" shall mean the work of authorship, whether in Source or</br>      Object form, made available under the License, as indicated by a</br>      copyright notice that is included in or attached to the work</br>      (an example is provided in the Appendix below).</br></br>      \"Derivative Works\" shall mean any work, whether in Source or Object</br>      form, that is based on (or derived from) the Work and for which the</br>      editorial revisions, annotations, elaborations, or other modifications</br>      represent, as a whole, an original work of authorship. For the purposes</br>      of this License, Derivative Works shall not include works that remain</br>      separable from, or merely link (or bind by name) to the interfaces of,</br>      the Work and Derivative Works thereof.</br></br>      \"Contribution\" shall mean any work of authorship, including</br>      the original version of the Work and any modifications or additions</br>      to that Work or Derivative Works thereof, that is intentionally</br>      submitted to Licensor for inclusion in the Work by the copyright owner</br>      or by an individual or Legal Entity authorized to submit on behalf of</br>      the copyright owner. For the purposes of this definition, \"submitted\"</br>      means any form of electronic, verbal, or written communication sent</br>      to the Licensor or its representatives, including but not limited to</br>      communication on electronic mailing lists, source code control systems,</br>      and issue tracking systems that are managed by, or on behalf of, the</br>      Licensor for the purpose of discussing and improving the Work, but</br>      excluding communication that is conspicuously marked or otherwise</br>      designated in writing by the copyright owner as \"Not a Contribution.\"</br></br>      \"Contributor\" shall mean Licensor and any individual or Legal Entity</br>      on behalf of whom a Contribution has been received by Licensor and</br>      subsequently incorporated within the Work.</br></br>   2. Grant of Copyright License. Subject to the terms and conditions of</br>      this License, each Contributor hereby grants to You a perpetual,</br>      worldwide, non-exclusive, no-charge, royalty-free, irrevocable</br>      copyright license to reproduce, prepare Derivative Works of,</br>      publicly display, publicly perform, sublicense, and distribute the</br>      Work and such Derivative Works in Source or Object form.</br></br>   3. Grant of Patent License. Subject to the terms and conditions of</br>      this License, each Contributor hereby grants to You a perpetual,</br>      worldwide, non-exclusive, no-charge, royalty-free, irrevocable</br>      (except as stated in this section) patent license to make, have made,</br>      use, offer to sell, sell, import, and otherwise transfer the Work,</br>      where such license applies only to those patent claims licensable</br>      by such Contributor that are necessarily infringed by their</br>      Contribution(s) alone or by combination of their Contribution(s)</br>      with the Work to which such Contribution(s) was submitted. If You</br>      institute patent litigation against any entity (including a</br>      cross-claim or counterclaim in a lawsuit) alleging that the Work</br>      or a Contribution incorporated within the Work constitutes direct</br>      or contributory patent infringement, then any patent licenses</br>      granted to You under this License for that Work shall terminate</br>      as of the date such litigation is filed.</br></br>   4. Redistribution. You may reproduce and distribute copies of the</br>      Work or Derivative Works thereof in any medium, with or without</br>      modifications, and in Source or Object form, provided that You</br>      meet the following conditions:</br></br>      (a) You must give any other recipients of the Work or</br>          Derivative Works a copy of this License; and</br></br>      (b) You must cause any modified files to carry prominent notices</br>          stating that You changed the files; and</br></br>      (c) You must retain, in the Source form of any Derivative Works</br>          that You distribute, all copyright, patent, trademark, and</br>          attribution notices from the Source form of the Work,</br>          excluding those notices that do not pertain to any part of</br>          the Derivative Works; and</br></br>      (d) If the Work includes a \"NOTICE\" text file as part of its</br>          distribution, then any Derivative Works that You distribute must</br>          include a readable copy of the attribution notices contained</br>          within such NOTICE file, excluding those notices that do not</br>          pertain to any part of the Derivative Works, in at least one</br>          of the following places: within a NOTICE text file distributed</br>          as part of the Derivative Works; within the Source form or</br>          documentation, if provided along with the Derivative Works; or,</br>          within a display generated by the Derivative Works, if and</br>          wherever such third-party notices normally appear. The contents</br>          of the NOTICE file are for informational purposes only and</br>          do not modify the License. You may add Your own attribution</br>          notices within Derivative Works that You distribute, alongside</br>          or as an addendum to the NOTICE text from the Work, provided</br>          that such additional attribution notices cannot be construed</br>          as modifying the License.</br></br>      You may add Your own copyright statement to Your modifications and</br>      may provide additional or different license terms and conditions</br>      for use, reproduction, or distribution of Your modifications, or</br>      for any such Derivative Works as a whole, provided Your use,</br>      reproduction, and distribution of the Work otherwise complies with</br>      the conditions stated in this License.</br></br>   5. Submission of Contributions. Unless You explicitly state otherwise,</br>      any Contribution intentionally submitted for inclusion in the Work</br>      by You to the Licensor shall be under the terms and conditions of</br>      this License, without any additional terms or conditions.</br>      Notwithstanding the above, nothing herein shall supersede or modify</br>      the terms of any separate license agreement you may have executed</br>      with Licensor regarding such Contributions.</br></br>   6. Trademarks. This License does not grant permission to use the trade</br>      names, trademarks, service marks, or product names of the Licensor,</br>      except as required for reasonable and customary use in describing the</br>      origin of the Work and reproducing the content of the NOTICE file.</br></br>   7. Disclaimer of Warranty. Unless required by applicable law or</br>      agreed to in writing, Licensor provides the Work (and each</br>      Contributor provides its Contributions) on an \"AS IS\" BASIS,</br>      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or</br>      implied, including, without limitation, any warranties or conditions</br>      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A</br>      PARTICULAR PURPOSE. You are solely responsible for determining the</br>      appropriateness of using or redistributing the Work and assume any</br>      risks associated with Your exercise of permissions under this License.</br></br>   8. Limitation of Liability. In no event and under no legal theory,</br>      whether in tort (including negligence), contract, or otherwise,</br>      unless required by applicable law (such as deliberate and grossly</br>      negligent acts) or agreed to in writing, shall any Contributor be</br>      liable to You for damages, including any direct, indirect, special,</br>      incidental, or consequential damages of any character arising as a</br>      result of this License or out of the use or inability to use the</br>      Work (including but not limited to damages for loss of goodwill,</br>      work stoppage, computer failure or malfunction, or any and all</br>      other commercial damages or losses), even if such Contributor</br>      has been advised of the possibility of such damages.</br></br>   9. Accepting Warranty or Additional Liability. While redistributing</br>      the Work or Derivative Works thereof, You may choose to offer,</br>      and charge a fee for, acceptance of support, warranty, indemnity,</br>      or other liability obligations and/or rights consistent with this</br>      License. However, in accepting such obligations, You may act only</br>      on Your own behalf and on Your sole responsibility, not on behalf</br>      of any other Contributor, and only if You agree to indemnify,</br>      defend, and hold each Contributor harmless for any liability</br>      incurred by, or claims asserted against, such Contributor by reason</br>      of your accepting any such warranty or additional liability.</br></br>   END OF TERMS AND CONDITIONS</br></br>   APPENDIX: How to apply the Apache License to your work.</br></br>      To apply the Apache License to your work, attach the following</br>      boilerplate notice, with the fields enclosed by brackets \"[]\"</br>      replaced with your own identifying information. (Don't include</br>      the brackets!)  The text should be enclosed in the appropriate</br>      comment syntax for the file format. We also recommend that a</br>      file or class name and description of purpose be included on the</br>      same \"printed page\" as the copyright notice for easier</br>      identification within third-party archives.</br></br>   Copyright [2019] [weolar]</br></br>   Licensed under the Apache License, Version 2.0 (the \"License\");</br>   you may not use this file except in compliance with the License.</br>   You may obtain a copy of the License at</br></br>       http://www.apache.org/licenses/LICENSE-2.0</br></br>   Unless required by applicable law or agreed to in writing, software</br>   distributed under the License is distributed on an \"AS IS\" BASIS,</br>   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</br>   See the License for the specific language governing permissions and</br>   limitations under the License."
+                },
+                {
+                    "type": "collapse_end"
+                }
+            ]
+        }
+    ]
+}

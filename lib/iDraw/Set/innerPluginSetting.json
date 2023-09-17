@@ -1,0 +1,727 @@
+{
+    "title": "内部插件设置",
+    "tab": [{
+            "label": "基础设置",
+            "value": [{
+                    "type": "select",
+                    "id": "主题方案",
+                    "label": "主题方案",
+                    "cfgpath": "/data/Config.ini Theme name",
+                    "value": [{
+                            "text": "默认主题（黑色）",
+                            "value": "默认主题"
+                        },
+                        {
+                            "text": "白色主题",
+                            "value": "白色主题"
+                        }
+                    ]
+                },
+                {
+                    "type": "select",
+                    "id": "渲染模式",
+                    "label": "渲染模式",
+                    "cfgpath": "/data/Config.ini iDraw isDxRender",
+                    "value": [{
+                            "text": "DX",
+                            "value": "1"
+                        },
+                        {
+                            "text": "Gdiplus",
+                            "value": "0"
+                        }
+                    ]
+                },
+                {
+                    "type": "select",
+                    "id": "树型框双击模式",
+                    "label": "树型框双击模式",
+                    "cfgpath": "/data/Config.ini iDraw programTreeDblclk",
+                    "value": [{
+                            "text": "只切换",
+                            "value": "0"
+                        },
+                        {
+                            "text": "只展开",
+                            "value": "1"
+                        },
+                        {
+                            "text": "展开+切换",
+                            "value": "2"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "skin": "primary",
+                    "label": "鼠标滚动行数",
+                    "id": "鼠标滚动行数",
+                    "placeholder": "鼠标滚轮滚动一次后的行数",
+                    "value": "3",
+                    "minvalue": "1",
+                    "maxvalue": "30",
+                    "cfgpath": "/data/Config.ini iDraw wheelPos",
+                    "restart": "restart"
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "label": "不自动切换工作夹(从窗口设计器切换到代码的时候左边的工作夹不会自动切换)",
+                    "id": "不自动切换工作夹",
+                    "cfgpath": "/data/Config.ini iDraw noChangeTab_work"
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "label": "不自动切换状态夹(底部的状态夹不会自动切换, 只有手动点击才会切换)",
+                    "id": "不自动切换状态夹",
+                    "cfgpath": "/data/Config.ini iDraw noChangeTab_state"
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "label": "组件箱树型框显示原图标",
+                    "id": "组件箱树型框显示原图标",
+                    "cfgpath": "/data/Config.ini iDraw tree_controlorgIcon"
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "label": "是否显示定位工具条",
+                    "id": "是否显示定位工具条",
+                    "checked": "checked",
+                    "cfgpath": "/data/Config.ini iDraw IsShowLocationTool"
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "label": "开启DPI缩放感知",
+                    "id": "开启DPI缩放感知",
+                    "checked": "checked",
+                    "cfgpath": "/data/Config.ini iDraw IsDPIAware",
+                    "restart": "restart",
+                    
+                }
+            ]
+        },
+        {
+            "label": "重绘与显示",
+            "value": [{
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "label": "支持库树形框支持热点",
+                    "id": "支持库树形框支持热点",
+                    "placeholder": "支持库树形框支持热点",
+                    "cfgpath": "/data/Config.ini iDraw fne_treeishot",
+                    "checked": "checked"
+                },
+                {
+                    "type": "text",
+                    "label": "树形框项目高度",
+                    "id": "树形框项目高度",
+                    "cfgpath": "/data/Config.ini iDraw fne_treeitemHeight",
+                    "value": "24",
+                    "minvalue": "0",
+                    "placeholder": "设置树形框的项目的高度"
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "label": "程序树形框支持热点",
+                    "id": "程序树形框支持热点",
+                    "placeholder": "程序树形框支持热点",
+                    "cfgpath": "/data/Config.ini iDraw tree_programishot",
+                    "checked": "checked"
+                },
+                {
+                    "type": "text",
+                    "label": "树形框项目高度",
+                    "id": "程序树形框项目高度",
+                    "cfgpath": "/data/Config.ini iDraw tree_programitemHeight",
+                    "value": "24",
+                    "minvalue": "0",
+                    "placeholder": "设置树形框的项目的高度"
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "label": "组件箱树形框支持热点",
+                    "id": "组件箱树形框支持热点",
+                    "placeholder": "组件箱树形框支持热点",
+                    "cfgpath": "/data/Config.ini iDraw tree_controlishot",
+                    "checked": "checked"
+                },
+                {
+                    "type": "text",
+                    "label": "树形框项目高度",
+                    "id": "组件箱树形框项目高度",
+                    "cfgpath": "/data/Config.ini iDraw tree_controlitemHeight",
+                    "value": "24",
+                    "minvalue": "0",
+                    "placeholder": "设置树形框的项目的高度"
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "label": "变量表树形框支持热点",
+                    "id": "变量表树形框支持热点",
+                    "placeholder": "变量表树形框支持热点",
+                    "cfgpath": "/data/Config.ini iDraw tree_varishot",
+                    "checked": "checked"
+                },
+                {
+                    "type": "text",
+                    "label": "树形框项目高度",
+                    "id": "变量表树形框项目高度",
+                    "cfgpath": "/data/Config.ini iDraw tree_varitemHeight",
+                    "value": "24",
+                    "minvalue": "0",
+                    "placeholder": "设置树形框的项目的高度"
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "label": "调用表树形框支持热点",
+                    "id": "调用表树形框支持热点",
+                    "placeholder": "调用表树形框支持热点",
+                    "cfgpath": "/data/Config.ini iDraw tree_callishot",
+                    "checked": "checked"
+                },
+                {
+                    "type": "text",
+                    "label": "调用表树形框项目高度",
+                    "id": "调用表树形框项目高度",
+                    "cfgpath": "/data/Config.ini iDraw tree_callitemHeight",
+                    "value": "24",
+                    "minvalue": "0",
+                    "placeholder": "设置树形框的项目的高度"
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "label": "搜寻列表框1树形框支持热点",
+                    "id": "搜寻列表框1支持热点",
+                    "placeholder": "搜寻列表框1支持热点",
+                    "cfgpath": "/data/Config.ini iDraw list_find1ishot",
+                    "checked": "checked"
+                },
+                {
+                    "type": "text",
+                    "label": "树形框项目高度",
+                    "id": "搜寻列表框1项目高度",
+                    "cfgpath": "/data/Config.ini iDraw list_find1itemHeight",
+                    "value": "24",
+                    "minvalue": "0",
+                    "placeholder": "设置树形框的项目的高度"
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "label": "搜寻列表框2树形框支持热点",
+                    "id": "搜寻列表框2支持热点",
+                    "placeholder": "搜寻列表框1支持热点",
+                    "cfgpath": "/data/Config.ini iDraw list_find2ishot",
+                    "checked": "checked"
+                },
+                {
+                    "type": "text",
+                    "label": "树形框项目高度",
+                    "id": "搜寻列表框2项目高度",
+                    "cfgpath": "/data/Config.ini iDraw list_find2itemHeight",
+                    "value": "24",
+                    "minvalue": "0",
+                    "placeholder": "设置树形框的项目的高度"
+                },
+                {
+                    "type": "text",
+                    "label": "菜单项高度",
+                    "id": "菜单项高度",
+                    "cfgpath": "/data/Config.ini iDraw MenuItemHeight",
+                    "value": "24",
+                    "minvalue": "0",
+                    "placeholder": "菜单项高度"
+                },
+                {
+                    "type": "text",
+                    "label": "分隔菜单项高度",
+                    "id": "分隔菜单项高度",
+                    "cfgpath": "/data/Config.ini iDraw MenuItemHeightnSeparator",
+                    "value": "5",
+                    "minvalue": "0",
+                    "placeholder": "分隔菜单项高度"
+                }
+            ]
+        },
+        {
+            "label": "位置与图标",
+            "value": [{
+                    "type": "select",
+                    "id": "工作夹表头位置",
+                    "label": "工作夹表头位置",
+                    "cfgpath": "/data/Config.ini EWindowSize workdirection",
+                    "value": [{
+                            "text": "左边",
+                            "value": "0"
+                        },
+                        {
+                            "text": "顶边",
+                            "value": "1"
+                        },
+                        {
+                            "text": "右边",
+                            "value": "2"
+                        },
+                        {
+                            "text": "底边",
+                            "value": "3"
+                        }
+                    ]
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "label": "显示图标 - 工作选择夹表头显示图标",
+                    "id": "工作夹显示图标",
+                    "placeholder": "工作夹显示图标",
+                    "cfgpath": "/data/Config.ini EWindowSize workisIcon",
+                    "checked": "checked"
+                },
+                {
+                    "type": "hr"
+                },
+                {
+                    "type": "select",
+                    "id": "状态夹表头位置",
+                    "label": "状态夹表头位置",
+                    "cfgpath": "/data/Config.ini EWindowSize statedirection",
+                    "value": [{
+                            "text": "左边",
+                            "value": "0"
+                        },
+                        {
+                            "text": "顶边",
+                            "value": "1"
+                        },
+                        {
+                            "text": "右边",
+                            "value": "2"
+                        },
+                        {
+                            "text": "底边",
+                            "value": "3"
+                        }
+                    ]
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "label": "显示图标 - 状态夹选择表头显示图标",
+                    "id": "状态夹显示图标",
+                    "placeholder": "状态夹显示图标",
+                    "cfgpath": "/data/Config.ini EWindowSize stateisIcon",
+                    "checked": "checked"
+                },
+                {
+                    "type": "hr"
+                },
+                {
+                    "type": "select",
+                    "id": "代码夹表头位置",
+                    "label": "代码夹表头位置",
+                    "cfgpath": "/data/Config.ini EWindowSize codedirection",
+                    "value": [{
+                            "text": "顶边",
+                            "value": "1"
+                        },
+                        {
+                            "text": "底边",
+                            "value": "3"
+                        }
+                    ]
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "label": "显示图标 - 代码切换选择夹表头显示图标",
+                    "id": "代码切换夹显示图标",
+                    "placeholder": "代码切换夹显示图标",
+                    "cfgpath": "/data/Config.ini EWindowSize codeisIcon",
+                    "checked": "checked"
+                }
+            ]
+        },
+        {
+            "label": "代码行号设置",
+            "value": [{
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "label": "启用代码行号",
+                    "id": "启用代码行号",
+                    "cfgpath": "/data/Config.ini LineCode isEnabled",
+                    "checked": "checked"
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "label": "选中行号线",
+                    "id": "选中行号线",
+                    "cfgpath": "/data/Config.ini LineCode isDrawLine",
+                    "checked": "checked"
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "label": "显示行号数字",
+                    "id": "显示行号数字",
+                    "cfgpath": "/data/Config.ini LineCode isDrawLineNumber",
+                    "checked": "checked"
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "label": "选中行号线加粗",
+                    "id": "选中行号线加粗",
+                    "cfgpath": "/data/Config.ini LineCode isBoldLine",
+                    "checked": "checked"
+                },
+                {
+                    "type": "text",
+                    "skin": "primary",
+                    "label": "代码行号列宽度",
+                    "id": "代码行号列宽度",
+                    "cfgpath": "/data/Config.ini LineCode lineWidth",
+                    "value": "50",
+                    "minvalue": "30",
+                    "maxvalue": "100"
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "label": "背景颜色随易语言配色改变 （勾选后，下方背景颜色将被忽略）",
+                    "id": "背景颜色随易语言配色改变",
+                    "cfgpath": "/data/Config.ini LineCode isAutoBack",
+                    "checked": "checked"
+                },
+                {
+                    "type": "color",
+                    "skin": "primary",
+                    "label": "行号焦点颜色",
+                    "id": "行号焦点颜色",
+                    "cfgpath": "/data/Config.ini LineCode crHot",
+                    "value": "#C1F9FD"
+                },
+                {
+                    "type": "color",
+                    "skin": "primary",
+                    "label": "背景颜色",
+                    "id": "背景颜色",
+                    "cfgpath": "/data/Config.ini LineCode crBack",
+                    "value": "#333333"
+                },
+                {
+                    "type": "color",
+                    "skin": "primary",
+                    "label": "通常行号颜色",
+                    "id": "通常行号颜色",
+                    "cfgpath": "/data/Config.ini LineCode crNormal",
+                    "value": "#0085C4"
+                },
+                {
+                    "type": "color",
+                    "skin": "primary",
+                    "label": "行号展开颜色",
+                    "id": "行号展开颜色",
+                    "cfgpath": "/data/Config.ini LineCode crExpand",
+                    "value": "#FF8000"
+                },
+                {
+                    "type": "color",
+                    "skin": "primary",
+                    "label": "行号线颜色",
+                    "id": "行号线颜色",
+                    "cfgpath": "/data/Config.ini LineCode crLine",
+                    "value": "#424242"
+                },
+                {
+                    "type": "quote",
+                    "skin": "gray",
+                    "text": "行号线样式 = {有线部分宽度, 空白部分宽度,有线,空白...}<br>点划线={2,2,4,2}<br>点线 =  {2,2}<br>实线 = 0(内置样式) 或 {n,0} 或 {n}  （n>0)"
+                },
+                {
+                    "type": "text",
+                    "skin": "primary",
+                    "label": "行号线样式",
+                    "id": "行号线样式",
+                    "cfgpath": "/data/Config.ini LineCode dot",
+                    "value": "0"
+                }
+            ]
+        },
+        {
+            "label": "输出框设置",
+            "value": [
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "label": "启用输出框扩展（启用后下方设置才有效,重启后生效）",
+                    "id": "启用输出框扩展",
+                    "cfgpath": "/superTools/config/eOutPutControl.ini Plugin enablePlugin",
+                    "checked": "checked",
+                    "restart": "restart"
+                },
+                {
+                    "type": "text",
+                    "skin": "primary",
+                    "label": "输出框字体大小",
+                    "id": "输出框字体大小",
+                    "placeholder": "输出框的字体大小设置",
+                    "value": "10",
+                    "cfgpath": "/superTools/config/eOutPutControl.ini Plugin fontSize"
+                },
+                {
+                    "type": "text",
+                    "skin": "primary",
+                    "label": "输出框字体名称",
+                    "id": "输出框字体名称",
+                    "placeholder": "输出框字体名称",
+                    "value": "微软雅黑",
+                    "cfgpath": "/superTools/config/eOutPutControl.ini Plugin fontName"
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "label": "精简编译输出（自动隐藏编译时输出的长内容，输出精简内容）",
+                    "id": "精简编译输出",
+                    "cfgpath": "/superTools/config/eOutPutControl.ini Plugin hideBuildOut"
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "label": "保留历史输出 （输出新内容时，保留之前的所有输出内容）",
+                    "id": "保留历史输出",
+                    "cfgpath": "/superTools/config/eOutPutControl.ini Plugin holdhistory",
+                    "checked": "checked"
+                },
+                {
+                    "type": "select",
+                    "label": "内容输出方向",
+                    "id": "内容输出方向",
+                    "value": [{
+                        "text": "新内容输出到最后一行",
+                        "value": "0",
+                        "selected": "selected"
+                    }, {
+                        "text": "新内容输出到第一行",
+                        "value": "1"
+                    }],
+                    "cfgpath": "/superTools/config/eOutPutControl.ini Plugin headOutPut"
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "label": "清空输出框时是否确认",
+                    "id": "清空输出框时是否确认",
+                    "cfgpath": "/superTools/config/eOutPutControl.ini Plugin clearconfirm",
+                    "checked": "checked"
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "label": "启用抗锯齿,可以使字体边缘更加平滑。",
+                    "id": "启用抗锯齿",
+                    "cfgpath": "/superTools/config/eOutPutControl.ini Plugin antialias",
+                    "checked": "checked"
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "label": "针对LCD显示屏幕的优化方案,可以使字体边缘更加平滑。",
+                    "id": "LCD显示优化",
+                    "cfgpath": "/superTools/config/eOutPutControl.ini Plugin lcdoptimize",
+                    "checked": "checked"
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "label": "启动DX绘制，显示效果更好速度更快，如果不兼容或输出异常，请取消勾选。",
+                    "id": "是否启用DX绘制",
+                    "cfgpath": "/superTools/config/eOutPutControl.ini Plugin useDX"
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "label": "在输出易语言调试输出时，显示开始调试和结束调试的时间，",
+                    "id": "是否输出时显示时间",
+                    "cfgpath": "/superTools/config/eOutPutControl.ini Plugin isShowTime"
+                },
+                {
+                    "type": "color",
+                    "skin": "primary",
+                    "label": "在输出易语言调试输出时，显示开始调试和结束调试的颜色",
+                    "id": "额外输出显示颜色",
+                    "cfgpath": "/superTools/config/eOutPutControl.ini Plugin showTimeColor",
+                    "value": "#CA5100"
+                },
+                {
+                    "type": "quote",
+                    "skin": "gray",
+                    "text": "输出一般文本时，加入时间前缀，格式如下：%H=小时，%M=分钟，%S=秒，%K=毫秒。更多使用请看<a href='https://www.runoob.com/cprogramming/c-function-strftime.html'>【点击查看所有参数】</a>"
+                },
+                {
+                    "type": "text",
+                    "skin": "primary",
+                    "label": "时间文本格式",
+                    "id": "时间文本格式",
+                    "value": "%H:%M:%S",
+                    "cfgpath": "/superTools/config/eOutPutControl.ini Plugin timeformat"
+                }
+                ,{
+                    "type": "text",
+                    "skin": "primary",
+                    "label": "外部查看工具",
+                    "id": "外部查看工具",
+                    "placeholder": "可以直接使用第三方文本查看工具查看所有输出内容，请指定路径，默认为系统记事本",
+                    "value": "系统记事本",
+                    "cfgpath": "/superTools/config/eOutPutControl.ini Plugin exViewPath"
+                }
+            ]
+        },
+        {
+            "label": "易语言优化",
+            "value": [{
+                    "type": "quote",
+                    "skin": "gray",
+                    "text": "该页提供了为易语言优化的功能，建议保持开启。"
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "label": "修复后台残留进程卡死新启动易语言问题，建议保持开启。",
+                    "id": "启动假死",
+                    "cfgpath": "/superTools/config/Plugin_eFix.ini Plugin isFixSendMessage",
+                    "restart": "restart",
+                    "checked": "checked"
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "label": "解除常量编辑控件输入文本的长度30000限制，增加【Ctrl + A】的全选支持",
+                    "id": "优化常量编辑框",
+                    "cfgpath": "/superTools/config/Plugin_eFix.ini Plugin isFixCtrlA",
+                    "checked": "checked",
+                    "restart": "restart"
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "label": "修复 [输出调试文本] 长度限制（如输出内容过长，可能会引起卡顿）",
+                    "id": "输出调试文本长度限制",
+                    "cfgpath": "/superTools/config/Plugin_eFix.ini Plugin isFixOutPut",
+                    "checked": "checked",
+                    "restart": "restart",
+                    "punion": "debug"
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "label": "输出长文本自动保存到文件，如果使用了输出调试文本或调试输出输出了过长的内容，将自动写到文件，使用【Ctrl+左键】点击链接即可打开文件。需要开启上方选项才可使用。",
+                    "id": "输出长文本自动保存到文件",
+                    "cfgpath": "/superTools/config/Plugin_eFix.ini Plugin fixOutPutToFile",
+                    "restart": "restart",
+                    "punion": "debug"
+                },
+                {
+                    "type": "quote",
+                    "skin": "gray",
+                    "text": "<font color='red'>已知问题：</font>使用<b>E2EE</b>的相关输出命令进行输出时，<b>【输出长文本自动保存到文件】</b>该选项会产生冲突，导致所有输出内容都是长文本。"
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "label": "输出调试进程的id和退出代码(需勾选上一项)",
+                    "id": "输出调试进程的id和退出代码",
+                    "cfgpath": "/superTools/config/Plugin_eFix.ini Plugin printProcessId",
+                    "union": "debug",
+                    "restart": "restart"
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "label": "修复长备注查看bug(修复在查看长备注时，滚动条定位错误的问题)",
+                    "id": "修复长备注查看bug",
+                    "cfgpath": "/superTools/config/Plugin_eFix.ini Plugin fixlongdescryption",
+                    "restart": "restart"
+                }
+            ]
+        },
+        {
+            "label": "屏蔽提示框",
+            "value": [{
+                "type": "select",
+                "label": "编译模块",
+                "id": "屏蔽提示_编译模块",
+                "value": [{
+                    "text": "不导入到ecom目录",
+                    "value": "0",
+                    "selected": "selected"
+                }, {
+                    "text": "导入到ecom目录",
+                    "value": "1"
+                }, {
+                    "text": "不启用",
+                    "value": "2"
+                }],
+                "cfgpath": "/superTools/config/MessageBlocker.ini Plugin blockBuildecom"
+            }, {
+                "type": "checkbox",
+                "skin": "primary",
+                "id": "屏蔽提示_更新模块不提示",
+                "label": "发现引用模块有新版本直接更新",
+                "a": {
+                    "label": "查看效果",
+                    "href": "http://e.125.la/e.php?demo=d2"
+                },
+                "cfgpath": "/superTools/config/MessageBlocker.ini Plugin blockecomUpdate"
+            }, {
+                "type": "checkbox",
+                "skin": "primary",
+                "id": "屏蔽提示_屏蔽打开提示",
+                "label": "双击易语言源码直接在新窗口打开",
+                "cfgpath": "/superTools/config/MessageBlocker.ini Plugin blockOpenDlg"
+            }, {
+                "type": "checkbox",
+                "skin": "primary",
+                "id": "屏蔽提示_不可识别信息",
+                "label": "发现不可识别的[XXX信息段]，其数据已被跳过!",
+                "a": {
+                    "label": "查看效果",
+                    "href": "http://e.125.la/e.php?demo=d10"
+                },
+                "cfgpath": "/superTools/config/MessageBlocker.ini Plugin blockUnFormatCode"
+            }, {
+                "type": "checkbox",
+                "skin": "primary",
+                "id": "屏蔽提示_不同版本",
+                "label": "发现另一不同软件版本的易语言系统正在运行，两者混用容易产生问题，建议将其关闭！",
+                "a": {
+                    "label": "查看效果",
+                    "href": "http://e.125.la/e.php?demo=d9"
+                },
+                "cfgpath": "/superTools/config/MessageBlocker.ini Plugin blockOtherVersionE"
+            }, {
+                "type": "checkbox",
+                "skin": "primary",
+                "id": "屏蔽提示_建议升级",
+                "label": "此文件由易语言x版生成的x版易程序，建议升级至该版本以便正确和完整地读入文件数据!",
+                "a": {
+                    "label": "查看效果",
+                    "href": "http://e.125.la/e.php?demo=d10"
+                },
+                "cfgpath": "/superTools/config/MessageBlocker.ini Plugin blockUpdate"
+            }, {
+                "type": "quote",
+                "text": "本插件主要是将易语言一些提示信息框进行屏蔽处理，默认执行某个操作。不熟悉的易友请选择性开启相关功能，防止出现一些未知问题！"
+            }]
+        }
+    ]
+}

@@ -1,0 +1,183 @@
+{
+	"title" : "提示框扩展设置",
+	"tab":[
+			{
+			"label" : "提示框扩展",
+			"value" : [
+					{
+							"type" : "checkbox",
+							"skin" : "primary",
+							"id" : "启用提示扩展",
+							"label" : "启用提示扩展",
+							"restart" : "restart",
+							"checked" : "checked"
+					},{
+							"type" : "hr",
+							"color" : "green"
+					},{
+						"type" : "checkbox",
+						"skin" : "primary",
+						"id" : "是否同步T",
+						"label" : "是否同步易语言配色",
+						"restart" : "restart"
+					},{
+						"type" : "checkbox",
+						"skin" : "primary",
+						"id" : "启用命令提示过滤",
+						"label" : "启用命令提示过滤",
+						"checked" : "checked"
+					},
+                    {
+						"type" : "checkbox",
+                        "skin" : "primary",
+                        "id":"双击单元格自动复制",
+						"label" : "双击单元格自动复制文本"
+					},
+                    {
+						"type" : "text",
+						"label" : "字体大小",
+						"id" : "字体大小",
+						"placeholder" : "提示框中的字体大小，更改后重启易语言生效",
+						"value" : "9"
+					},{
+						"type" : "select",
+						"label" : "表格显示风格",
+						"id" : "显示风格",
+						"value" : [
+									{
+										"text" : "默认风格",
+										"value" : "0",
+										"selected" : "selected"
+									},{
+										"text" : "简约清爽",
+										"value" : "1"
+									},{
+										"text" : "sublime",
+										"value" : "2"
+									},{
+										"text" : "深夜码工",
+										"value" : "3"
+									},{
+										"text" : "老夫的少女心",
+										"value" : "4"
+									}
+								]
+					},{
+						"type" : "select",
+						"label" : "定位列表",
+						"id" : "定位列表",
+						"value" : [
+									{
+										"text" : "在右侧位置",
+										"value" : "0",
+										"selected" : "selected"
+									},{
+										"text" : "在左侧位置",
+										"value" : "1"
+									},{
+										"text" : "不显示定位列表",
+										"value" : "2"
+									}
+								]
+					},{
+						"type" : "text",
+						"label" : "定位框宽度",
+						"id" : "定位列表宽度",
+						"placeholder" : "列表框显示的宽度",
+						"value" : "253"
+					},{
+						"type" : "card",
+						"label" : "开启条件：",
+						"text" : "<p>1、建议状态夹的高度不低于200，宽度不低于600，这样表格显示更佳；</p><p>2、提示框字体更改需重启后生效；</p><p>3、本功能目前属于测试阶段，如果有更多建议，请加群联系我们反馈！</p>"
+					}
+					]
+			},{
+			"label" : "提示框自定义配色",
+			"value" : [
+						{
+							"type" : "checkbox",
+							"skin" : "primary",
+							"id" : "启用自定义表格风格",
+							"label" : "启用自定义表格风格（启用后，提示表格显示风格的选择无效）",
+							"restart" : "restart"
+						},{
+							"type" : "hr",
+							"color" : "green"
+						},{
+							"type" : "color",
+							"label" : "背景颜色",
+							"id" : "背景颜色",
+							"placeholder" : "整体背景颜色",
+							"value" : "#FFFFFF"
+						},{
+							"type" : "color",
+							"label" : "命令名色",
+							"id" : "命令名色",
+							"placeholder" : "命令名色",
+							"value" : "#000080"
+						},{
+							"type" : "color",
+							"label" : "参数名色",
+							"id" : "参数名色",
+							"placeholder" : "参数名色",
+							"value" : "#000000"
+						},{
+							"type" : "color",
+							"label" : "类型颜色",
+							"id" : "类型颜色",
+							"placeholder" : "类型颜色",
+							"value" : "#0000FF"
+						},{
+							"type" : "color",
+							"label" : "备注颜色",
+							"id" : "备注颜色",
+							"placeholder" : "备注颜色",
+							"value" : "#008000"
+						},{
+							"type" : "color",
+							"label" : "提示字色",
+							"id" : "提示字色",
+							"placeholder" : "提示字色",
+							"value" : "#000000"
+						},{
+							"type" : "color",
+							"label" : "文本型色",
+							"id" : "文本型色",
+							"placeholder" : "文本型色",
+							"value" : "#008080"
+						},{
+							"type" : "color",
+							"label" : "整数型色",
+							"id" : "整数型色",
+							"placeholder" : "整数型色",
+							"value" : "#800000"
+						},{
+							"type" : "color",
+							"label" : "库名字色",
+							"id" : "库名字色",
+							"placeholder" : "库名字色",
+							"value" : "maroon"
+						},{
+							"type" : "color",
+							"label" : "表格背景色",
+							"id" : "表格背景色",
+							"placeholder" : "表格背景色",
+							"value" : "#FFFFFF"
+						},{
+							"type" : "color",
+							"label" : "表头背景色",
+							"id" : "表头背景色",
+							"placeholder" : "表头背景色",
+							"value" : "#E6EDE4"
+						},{
+							"type" : "color",
+							"label" : "表格线颜色",
+							"id" : "表格线颜色",
+							"placeholder" : "表格线颜色",
+							"value" : "#999999"
+						}
+					]
+				}
+		]
+}
+

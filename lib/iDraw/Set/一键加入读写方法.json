@@ -1,0 +1,20 @@
+{
+	"title": "类成员自动添加访问",
+	"tab": [{
+		"label": "批量插入设置",
+		"value": [
+			{
+				"type": "checkbox",
+				"skin": "primary",
+				"id": "生成init",
+				"label": "生成init方法，该方法用作给所有的类成员变量赋值"
+			},
+			{
+				"type": "checkbox",
+				"skin": "primary",
+				"id": "生成string",
+				"label": "生成string方法，该方法可以将所有的类成员变量整理成一个string输出。"
+			}
+		]
+	}]
+}

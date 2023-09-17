@@ -1,0 +1,514 @@
+{
+    "title": "基本设置",
+    "tab": [
+        {
+            "label": "基本设置",
+            "value": [
+                {
+                    "type": "select",
+                    "id": "呼出热键_便签",
+                    "label": "呼出便签窗口",
+                    "value": [
+                        {
+                            "text": "无",
+                            "value": "0"
+                        },
+                        {
+                            "text": "Ctrl + ~",
+                            "value": "11"
+                        },
+                        {
+                            "text": "Ctrl + 1",
+                            "value": "22"
+                        },
+                        {
+                            "text": "Ctrl + F1",
+                            "value": "33"
+                        },
+                        {
+                            "text": "Alt + ~",
+                            "value": "44"
+                        },
+                        {
+                            "text": "Alt + F1",
+                            "value": "55",
+                            "selected": "selected"
+                        },
+                        {
+                            "text": "Alt + F2",
+                            "value": "66"
+                        }
+                    ]
+                },
+                {
+                    "type": "select",
+                    "id": "菜单_链接器",
+                    "label": "切换链接器菜单",
+                    "value": [
+                        {
+                            "text": "放到编译菜单",
+                            "value": "0"
+                        },
+                        {
+                            "text": "放到代码编辑区的右键菜单",
+                            "value": "1"
+                        },
+                        {
+                            "text": "不启用",
+                            "value": "2"
+                        }
+                    ]
+                },
+                {
+                    "type": "select",
+                    "id": "菜单_导入常用类",
+                    "label": "常用类导入菜单",
+                    "value": [
+                        {
+                            "text": "放到程序集→程序数据的右键菜单",
+                            "value": "0"
+                        },
+                        {
+                            "text": "放到代码编辑区的右键菜单",
+                            "value": "1"
+                        },
+                        {
+                            "text": "不启用",
+                            "value": "2"
+                        }
+                    ]
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "id": "是否保存易源码密码",
+                    "restart": "restart",
+                    "label": "源码 - 自动记住输入过的密码，下次打开源码后自动输入"
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "id": "新建扩展",
+                    "label": "菜单 - 在程序菜单内插入新建扩展菜单",
+                    "checked": "checked"
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "id": "关联支持库",
+                    "label": "支持库 - 关联支持库（关联后双击支持库文件时，可直接查看此支持库的信息）",
+                    "checked": "checked"
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "id": "右键查看支持库命令信息",
+                    "label": "支持库 - 在易语言里采用易语言助手支持库信息查看器查看支持库信息",
+                    "checked": "checked"
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "id": "打开源码显示起始页",
+                    "label": "打开源码后显示易语言起始页"
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "id": "检查模块文件安全",
+                    "label": "检测当前源码加载的模块是否被感染",
+                    "checked": "checked",
+                    "a": {
+                        "label": "查看",
+                        "href": "https://bbs.125.la/forum.php?mod=viewthread&tid=14276912",
+                        "placeholder": "点击查看效果"
+                    }
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "id": "统计匿名使用数据",
+                    "label": "允许程序搜集一些匿名数据，用来统计使用情况和完善插件。"
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "id": "延迟卸载插件",
+                    "restart": "restart",
+                    "checked": "checked",
+                    "label": "开启延迟插件卸载，减少因插件停用导致崩溃的情况（非插件开发者不建议停用）"
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "id": "精简化输出",
+                    "checked": "checked",
+                    "restart": "restart",
+                    "label": "精简化输出加载插件的信息"
+                }
+            ]
+        },
+        {
+            "label": "自动保存设置",
+            "value": [
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "id": "自动保存_开启自动保存源码",
+                    "label": "开启自动保存源码【该页总开关】",
+                    "checked": "checked"
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "id": "自动保存_只提示1次",
+                    "label": "每个源码自动保存成功的提示信息只提示1次",
+                    "checked": "checked"
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "id": "自动保存_调试运行",
+                    "label": "每次调试或编译时自动保存"
+                },
+                {
+                    "type": "text",
+                    "label": "保存间隔(秒)",
+                    "id": "自动保存_间隔",
+                    "value": "30",
+                    "minvalue": "-1",
+                    "maxvalue": "6000",
+                    "placeholder": "只对已保存的源码有效"
+                },
+                {
+                    "type": "quote",
+                    "skin": "gray",
+                    "text": "可以将自动保存时间设置为-1，表示不定时自动保存！"
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "id": "仅空闲时执行自动保存",
+                    "label": "仅在鼠标键盘空闲时(超过30秒)才执行自动保存"
+                },
+                {
+                    "type": "quote",
+                    "skin": "gray",
+                    "text": "自动备份功能是检测到当前源码文件MD5改变后才会触发备份功能，如果你还没有手动保存的习惯，建议开启 自动保存 功能，不要单方面只开启一个，防止意外！"
+                }
+            ]
+        },
+        {
+            "label": "自动备份设置",
+            "value": [
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "id": "自动备份_开启自动备份源码",
+                    "label": "开启自动备份源码【该页总开关】",
+                    "checked": "checked"
+                },
+                {
+                    "type": "text",
+                    "label": "备份间隔",
+                    "id": "自动备份_间隔",
+                    "placeholder": "分钟自动备份1次，最小为1分钟",
+                    "value": "5"
+                },
+                {
+                    "type": "text",
+                    "label": "最大备份",
+                    "id": "自动备份_最大备份",
+                    "placeholder": "最大的备份数量，最小值为10，超过将替换较旧的",
+                    "value": "30"
+                },
+                {
+                    "type": "select",
+                    "label": "备份格式",
+                    "id": "自动备份_格式",
+                    "value": [
+                        {
+                            "text": "名称_xx-xx-xx 12:00",
+                            "value": "0"
+                        },
+                        {
+                            "text": "名称_xx年x月x日 12:00",
+                            "value": "1"
+                        }
+                    ]
+                },
+                {
+                    "type": "select",
+                    "label": "备份模式",
+                    "id": "自动备份_模式",
+                    "value": [
+                        {
+                            "text": "备份到指定路径下",
+                            "value": "0"
+                        },
+                        {
+                            "text": "备份到源码所在目录下 (下方的备份路径请无视)",
+                            "value": "1"
+                        }
+                    ]
+                },
+                {
+                    "type": "file",
+                    "id": "自动备份_路径",
+                    "label": "备份路径",
+                    "placeholder": "双击选择备份路径",
+                    "value": "{pt}backup\\"
+                },
+                {
+                    "type": "hr"
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "id": "自动备份_启用黑名单",
+                    "label": "启用黑名单 (在黑名单中的源码名称将不会自动备份，每个一行，如：助手源码)",
+                    "checked": "checked",
+                    "union": "heimingdan"
+                },
+                {
+                    "type": "textarea",
+                    "label": "黑名单列表，支持通配符，填写源码文件名即可；如 精易模块*",
+                    "id": "自动备份_黑名单",
+                    "placeholder": "如：精易模块*",
+                    "union": "heimingdan"
+                },
+                {
+                    "type": "card",
+                    "label": "备份路径说明",
+                    "text": "<p>{p} = 易语言根目录，如：D:\\program files (x86)\\e\\</p><p>{pt} = 易语言助手根目录，如：D:\\program files (x86)\\e\\lib\\iDraw\\eTools\\</p>"
+                },
+                {
+                    "type": "quote",
+                    "skin": "gray",
+                    "text": "建议使用同步备份功能的网盘或软件将备份目录进行云端同步，以便及时方便的回档相关版本 <br>如【坚果云】；"
+                }
+            ]
+        },
+        {
+            "label": "模块管理设置",
+            "value": [
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "id": "记住加密模块密码",
+                    "restart": "restart",
+                    "label": "模块 - 双击引用加密模块时记住密码，下次引用时无需再次输入密码",
+                    "checked": "checked"
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "id": "不自动加载模块",
+                    "label": "模块 - 在 [编译模块] 环境下不自动加载模块",
+                    "checked": "checked"
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "id": "关联模块",
+                    "label": "模块 - 关联模块（关联后双击模块文件时，可直接查看此模块的信息）",
+                    "checked": "checked"
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "id": "模块_模块查看器是否置入父窗口",
+                    "label": "模块 - 在易语言中打开模块查看器不置入到易语言父窗口",
+                    "checked": "checked"
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "id": "替换模块查看器",
+                    "label": "模块 - 在易语言里采用易语言助手模块信息查看器查看模块信息",
+                    "checked": "checked",
+                    "a": {
+                        "label": "查看",
+                        "href": "http://e.125.la/e.php?demo=d3",
+                        "placeholder": "点击查看效果"
+                    }
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "id": "模块_已存在则打开查看",
+                    "label": "模块 - 已存在模块引用表中，如再次双击模块管理列表的模块时则使用模块查看器查看",
+                    "checked": "checked"
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "id": "模块_显示ecom栏目",
+                    "label": "模块 - 在模块管理列表中显示ecom栏目数据",
+                    "checked": "checked"
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "id": "模块_检查模块重复",
+                    "label": "模块 - 添加模块时检查重复，如果模块已经添加则不加入"
+                },
+                {
+                    "type": "select",
+                    "id": "呼出热键_模块",
+                    "label": "呼出模块窗口",
+                    "value": [
+                        {
+                            "text": "无",
+                            "value": "-1"
+                        },
+                        {
+                            "text": "Ctrl + ~",
+                            "value": "1",
+                            "selected": "selected"
+                        },
+                        {
+                            "text": "Ctrl + 1",
+                            "value": "2"
+                        },
+                        {
+                            "text": "Ctrl + F1",
+                            "value": "3"
+                        },
+                        {
+                            "text": "Alt + ~",
+                            "value": "4"
+                        },
+                        {
+                            "text": "Alt + F1",
+                            "value": "5"
+                        },
+                        {
+                            "text": "Alt + F2",
+                            "value": "6"
+                        }
+                    ]
+                },
+                {
+                    "type": "select",
+                    "restart": "restart",
+                    "id": "模块列表显示方式",
+                    "label": "模块列表位置",
+                    "value": [
+                        {
+                            "text": "顶部菜单显示 - 重启易语言生效",
+                            "value": "0"
+                        },
+                        {
+                            "text": "在左侧工作夹中显示 - 重启易语言生效",
+                            "value": "1"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "label": "词库设置",
+            "value": [
+                {
+                    "type": "button",
+                    "id": "打开词库",
+                    "label": "打开词库",
+                    "event": "run",
+                    "param": "lib/etools/ciku.exe"
+                },
+                {
+                    "type": "hr"
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "id": "词库_启用",
+                    "punion": "open",
+                    "label": "启用词库"
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "union": "open",
+                    "id": "词库_加载API",
+                    "label": "启用API词库"
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "union": "open",
+                    "id": "词库_加载常量",
+                    "label": "启用常量词库"
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "union": "open",
+                    "id": "词库_加载子程序",
+                    "label": "启用子程序词库"
+                },
+                {
+                    "type": "hr",
+                    "color": "green"
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "id": "词库_输出引用提示",
+                    "label": "引用词条输出提示信息",
+                    "checked": "checked"
+                },
+                {
+                    "type": "checkbox",
+                    "skin": "primary",
+                    "id": "插入到词库中",
+                    "label": "在右键菜单中加入->当前子程序加入到词库中<br>可以快速将光标处子程序加入到词库中",
+                    "checked": "checked"
+                }
+            ]
+        },
+        {
+            "label": "右键菜单配置",
+            "value": [
+                {
+                    "type": "table",
+                    "checkbox": "checkbox",
+                    "checked": "checked",
+                    "label": "代码区右键菜单启用管理",
+                    "value": [
+                        ["开启", "功能名", "描述"],
+                        [
+                            "序列化数据类型",
+                            "序列化数据类型",
+                            "将当前光标位置的数据类型生成Json序列化代码子程序"
+                        ],
+                        [
+                            "取选中数据长度",
+                            "取选中数据长度",
+                            "获取当前选中或数据类型的长度"
+                        ],
+                        ["整体搜索", "整体搜索", "调用易语言整体搜索窗口"],
+                        [
+                            "展开所有子程序",
+                            "展开所有子程序",
+                            "展开当前源码的所有子程序"
+                        ],
+                        [
+                            "收缩所有子程序",
+                            "收缩所有子程序",
+                            "收缩当前源码的所有子程序"
+                        ],
+                        ["清空输出框", "清空输出框", "清空输出框的输出内容"],
+                        ["选择项粘贴", "选择项粘贴", "将复制的文本选择项粘贴到代码区"],
+                        [
+                            "插入局部注释",
+                            "插入局部注释",
+                            "插入一段特定格式的注释文本，换行自动添加注释。【需开启代码框扩展】"
+                        ]
+                    ]
+                }
+            ]
+        }
+    ]
+}
