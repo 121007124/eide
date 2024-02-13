@@ -1,0 +1,19 @@
+打开 易语言目录\lib\iDraw\data\config.ini
+
+找到 [Theme] 这个配置节
+增加一个配置项
+白色主题=WhiteTheme.ini
+然后把name这个配置项的值改成 白色主题
+然后重启易语言
+
+
+改之后的结果是这样的
+
+[Theme]
+name=白色主题
+默认主题=DefaultTheme.ini
+白色主题=WhiteTheme.ini
+
+name = 表示当前使用哪个配色文件
+支持库会读取name这个配置项, 取到的值是 "白色主题"
+然后在去读取 "白色主题", 程序使用的就是 "白色主题" 指向的 "WhiteTheme.ini" 这个配色
